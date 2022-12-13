@@ -1,2 +1,2 @@
-# Maui-Covid
-Python code for Covid Data on Hawaii/Maui
+# Plant Growth Sensor Data
+Python code for Plant Growth Sensor Data
