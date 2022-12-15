@@ -1,2 +1,2 @@
-# Plant Growth Sensor Data
-Dev Python code for Plant Growth Sensor Data
+# Aquaponics Water Quality Data
+Python code for Aquaponics Water Quality Data
