@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv(r"C:\Git\Aquaponics Water Quality Data.csv")
+
+print(df.head())
+print(df.describe())
+print(df.shape)
+print(df.isnull().sum())
+
+import seaborn as sns
+matrix = df.corr().round(2)
+sns.heatmap(matrix, annot=True)
+plt.show()
