@@ -1,0 +1,37 @@
+import pandas as pd
+import scipy.stats as stats
+import stastsmodels.api as sm
+from statsmodels.formula.api import ols
+
+# loads the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# loads the iris dataset
+df = pd.read_csv(r"C:\Git\Aquaponics Water Quality Data.csv")
+
+# title
+plt.title('Water Temp vs PH', fontsize=20)
+
+# plot
+sns.regplot(df["Water Temp"], df["PH"], ci=None, fit_reg=True);
+
+# saves the image
+plt.savefig("Compare.png")
+plt.show()
+
+# Creates a linear regression model
+results = ols('PH ~ Water Temp', data=df).fit()
+
+# Print the results
+print(results.summary())
+
+
+
+
+
+
+
+
+
+
